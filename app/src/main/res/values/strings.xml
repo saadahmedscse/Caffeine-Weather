@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Caffeine Weather</string>
+
+    //Front Activity
+    <string name="header_title">Discover the weather\nin your city</string>
+    <string name="header_tag">Get to know your weather mpas and\nradar precipitation forecast</string>
+    <string name="get_started">Get Started</string>
+
 </resources>
