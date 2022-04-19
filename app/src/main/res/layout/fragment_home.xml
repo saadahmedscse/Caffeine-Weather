@@ -1,15 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".view.fragment.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/tv"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50"
+            android:background="@color/background"
+            android:gravity="center"
+            android:fontFamily="@font/regular"
+            android:textSize="@dimen/small_text"
+            android:textColor="@color/colorLightGrey"
+            android:text="@string/weather_forecast"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_250"
+                    android:padding="@dimen/size_20"
+                    android:layout_margin="@dimen/size_20"
+                    android:background="@drawable/bg_light_background_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="@string/today"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/medium_text"
+                        tools:ignore="RelativeOverlap" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/size_5"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/colorLightGrey"
+                        android:textSize="@dimen/small_text"
+                        tools:ignore="RelativeOverlap" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        tools:ignore="RelativeOverlap">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            tools:ignore="RelativeOverlap">
+
+                            <TextView
+                                android:id="@+id/temp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bold"
+                                android:textSize="@dimen/largest_text"
+                                android:text="@string/zero"
+                                android:textColor="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/degree"
+                                android:textColor="@color/colorYellow"
+                                android:textSize="@dimen/largest_text"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:paddingTop="12dp"
+                                android:text="@string/c"
+                                android:fontFamily="@font/bold"
+                                android:textColor="@color/colorYellow"
+                                android:textSize="@dimen/medium_text"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_5"
+                            android:fontFamily="@font/regular"
+                            android:textColor="@color/colorYellow"
+                            android:textSize="@dimen/small_text"
+                            tools:ignore="RelativeOverlap" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/weather_ico"
+                        android:layout_width="@dimen/size_120"
+                        android:layout_height="@dimen/size_120"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/transparent_logo"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentBottom="true"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/size_25"
+                            android:layout_height="@dimen/size_25"
+                            android:src="@drawable/location"
+                            app:tint="@color/colorYellow"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/size_15"
+                            android:fontFamily="@font/regular"
+                            android:textColor="@color/colorLightGrey"
+                            android:textSize="@dimen/normal_text" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 
 </FrameLayout>
