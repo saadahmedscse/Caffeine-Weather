@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Documents/Google Play Console/CaffeineWeather/app/src/main/res/layout/activity_front.xml" value="0.209375" />
+        <entry key="..\:/Documents/Google Play Console/CaffeineWeather/app/src/main/res/drawable/bg_blue_10.xml" value="0.14" />
+        <entry key="..\:/Documents/Google Play Console/CaffeineWeather/app/src/main/res/drawable/ripple_blue_10.xml" value="0.108" />
+        <entry key="..\:/Documents/Google Play Console/CaffeineWeather/app/src/main/res/drawable/snack_bg.xml" value="0.108" />
+        <entry key="..\:/Documents/Google Play Console/CaffeineWeather/app/src/main/res/layout/activity_front.xml" value="0.25" />
       </map>
     </option>
   </component>
