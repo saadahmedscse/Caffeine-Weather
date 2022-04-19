@@ -8,6 +8,8 @@
         <entry key="..\:/Documents/Google Play Console/CaffeineWeather/app/src/main/res/drawable/snack_bg.xml" value="0.108" />
         <entry key="..\:/Documents/Google Play Console/CaffeineWeather/app/src/main/res/layout/activity_front.xml" value="0.25" />
         <entry key="..\:/Documents/Google Play Console/CaffeineWeather/app/src/main/res/layout/activity_home.xml" value="0.209375" />
+        <entry key="..\:/Documents/Google Play Console/CaffeineWeather/app/src/main/res/layout/fragment_home.xml" value="0.209375" />
+        <entry key="..\:/Documents/Google Play Console/CaffeineWeather/app/src/main/res/layout/fragment_search.xml" value="0.209375" />
       </map>
     </option>
   </component>
