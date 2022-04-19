@@ -8,8 +8,10 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.res.ResourcesCompat
+import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.caffeine.caffeineweather.R
+import com.caffeine.caffeineweather.services.model.APIResponse
 import com.google.android.material.snackbar.Snackbar
 
 object Constants {
@@ -23,20 +25,20 @@ object Constants {
     const val SPACE = " "
     const val BLANK = ""
     const val NEW_LINE = "\n"
+    const val PERCENT_TWENTY = "%20"
     const val ALLOW_PERMISSION = "You must need to allow permission"
     const val FRONT_PAGE_STATE = "state"
 
     const val NO_INTERNET = "No Internet Connection"
     const val API_LIMIT_REACHED = "API rate limit exceeded"
     const val TOO_MANY_REQUEST = "Too many request from your device. Please come back later"
+    const val INVALID_INPUT = "You have entered an invalid location"
     const val ERROR = "Unexpected error occurred"
 
     const val CLOSE = "Close"
 
     //API
-    const val BASE_URL = "https://free-news.p.rapidapi.com/v1/"
-    const val X_RAPID_API_HOST = "free-news.p.rapidapi.com"
-    const val X_RAPID_API_KEY = "bd40a269b6msh78f3d4e11748ecap168345jsnb848afa0759b"
+    const val BASE_URL = "https://weatherdbi.herokuapp.com/"
 
     fun getHorizontalLayoutManager(context : Context) : LinearLayoutManager{
         return LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
@@ -46,12 +48,9 @@ object Constants {
         return LinearLayoutManager(context)
     }
 
-    /*
-    fun getStateOfOfNews() : MutableLiveData<DataState<APIResponse>>{
+    fun getStateOfWeather() : MutableLiveData<DataState<APIResponse>> {
         return MutableLiveData<DataState<APIResponse>>()
     }
-
-     */
 
     fun intentToActivity(activity : Activity, c : Class<*>){
         activity.startActivity(Intent(activity, c))
