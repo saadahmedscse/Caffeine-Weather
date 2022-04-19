@@ -7,7 +7,6 @@ import android.content.pm.PackageManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.core.content.ContextCompat
 import com.caffeine.caffeineweather.R
 import com.caffeine.caffeineweather.databinding.ActivityFrontBinding
