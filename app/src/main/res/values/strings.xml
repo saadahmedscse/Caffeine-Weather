@@ -5,7 +5,15 @@
     <string name="header_title">Discover the weather\nin your city</string>
     <string name="header_tag">Get to know your weather mpas and\nradar precipitation forecast</string>
     <string name="get_started">Get Started</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Home Fragment
+    <string name="weather_forecast">Weather Forecast</string>
+    <string name="today">Today</string>
+    <string name="degree">°</string>
+    <string name="c">C</string>
+    <string name="f">F</string>
+    <string name="zero">0</string>
 
 </resources>
